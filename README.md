@@ -6,16 +6,16 @@ Require external `lualib_bundle` instead of including it in the code when bundli
 tsconfig.json
 ```json
 {
-    "compilerOptions": { /* ... */ },
+    "compilerOptions": { },
     "tstl": {
         "luaBundle": "Main.lua",
         "luaBundleEntry": "src/Main.ts",
+        "luaLibImport": "none",
         "luaPlugins": [
           {
               "name": "tstl-bundle-require-lualib",
-            
-              // optional, custom name for lualib bundle to require
-              "luaLibName": "custom_lualib_bundle"
+
+              "luaLibName": "optional_custom_require_name"
           }
         ]
     }
