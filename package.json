@@ -1,0 +1,38 @@
+{
+    "name": "tstl-bundle-require-lualib",
+    "version": "1.0.0",
+    "description": "Require external LuaLib bundle when bundling TypeScriptToLua",
+    "type": "module",
+    "main": "dist/index.js",
+    "license": "MIT",
+    "author": {
+        "name": "dnrovs",
+        "url": "https://github.com/dnrovs",
+        "email": "fesuk637@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dnrovs/tstl-bundle-require-lualib"
+    },
+    "bugs": {
+        "url": "https://github.com/dnrovs/tstl-bundle-require-lualib/issues",
+        "email": "fesuk637@gmail.com"
+    },
+    "scripts": {
+        "prettier": "prettier -c src",
+        "lint": "eslint src",
+        "build": "tsc"
+    },
+    "files": [
+        "dist"
+    ],
+    "devDependencies": {
+        "@eslint/js": "^10.0.1",
+        "eslint": "^10.0.0",
+        "globals": "^17.3.0",
+        "prettier": "^3.8.1",
+        "typescript": "^5.9.3",
+        "typescript-eslint": "^8.55.0",
+        "typescript-to-lua": "^1.33.2"
+    }
+}
